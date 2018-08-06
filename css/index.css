@@ -17,7 +17,7 @@ body {width: 100%;height: 100%;overflow: hidden;font-family: "微软雅黑";}
 .ztNav_menu>li:hover {color: #FFFFFF;border-bottom: 0.2rem solid #64f450;font-weight: bold;transition-duration: 0.2s;}
 /********************首页********************/
 /*服务导航*/
-.zt_FWPro {margin: 0 5% 0 15.5%;padding: 0 0.75rem;overflow: hidden;position: relative;}
+.zt_FWPro {margin: 0 5% 0 15.5%;padding: 0 0.75rem;overflow: hidden;position: relative;display: none;}
 .zt_FWPro_head,.zt_FWLC_head {font-size: 1.6rem;text-align: center;color: #FFFFFF;margin: 0rem 9rem 0 0;position: relative;}
 .zt_FWPro_nav {padding: 0.4rem;overflow: hidden;}
 .zt_FWPro_nav>li {width: 7.5rem;margin-left: 2.2rem;display: inline-block;font-size: 1rem;color: #FFFFFF;text-align: center;padding: 1rem 0.5rem 0.5rem;}
@@ -78,7 +78,7 @@ body {width: 100%;height: 100%;overflow: hidden;font-family: "微软雅黑";}
 .LX_main input {width: 9rem;border: 1px solid #FFFFFF;border-bottom: 1px solid #d1d1d1;font-size: 0.9rem;padding: 0.2rem 0.5rem;}
 .LX_main p {margin-bottom: 2rem;}
 /*********************新闻公告************************/
-#zt_XWmain {margin: 0 14%;position: relative;padding: 0rem 5rem 1rem;overflow: hidden;display: block;}
+#zt_XWmain {margin: 0 14%;position: relative;padding: 0rem 5rem 1rem;overflow: hidden;display: none;}
 .ztxw_head {text-align: center;font-size: 1.8rem;color: #FFFFFF;}
 .ztxw_nav {font-size: 1rem;color: #FFFFFF; overflow: hidden;text-align: center;margin: 1rem 0 1.5rem 6.5rem;}
 .ztxw_nav>li {padding: 0.7rem 0;margin-right: 6rem;display: inline-block;}
@@ -104,3 +104,16 @@ body {width: 100%;height: 100%;overflow: hidden;font-family: "微软雅黑";}
 .zt_CGList>li:hover {transform: scale(1.1);transition-duration: 0.3s;}
 .zt_CGList>li img {width: 100%;}
 .zt_CGList>li:nth-of-type(3n) {margin-right: 0;}
+/**********************关于我们**********************/
+#zt_WMmain {margin: 0 0 0 16%;position: relative;padding: 0.4375rem 1rem 10rem 1rem;overflow: hidden;display: block;}
+.gyWM_head {color: #FFFFFF;text-align: center;margin: 0 0 2rem 12.5rem;width: 40.5375rem;}
+.gyWM_headHead {font-size: 1.775rem;margin: 1rem 0;}
+.gyWM_headInfo {font-size: 1.15rem;font-weight: 100;line-height: 1.875rem;}
+.gyWM_main {color: #FFFFFF;}
+.gyWM_main>li {padding: 2rem 2.5rem;width: 26.5625rem;background: url("../img/gyWMInfoImg.png") no-repeat;background-size: 100%;
+    display: inline-block;margin: 1rem 0.7rem;cursor: pointer;}
+.gyWM_main>li:nth-of-type(2n) {margin-right: 0;}
+.gyWM_main>li>.gyWM_mainListHead {font-size: 1.4rem;font-weight: lighter;}
+.gyWM_main>li>.gyWM_mainListInfo {font-size: 1.025rem;margin: 0.5rem 0 1rem;font-weight: 100;line-height: 1.575rem;}
+.gyWM_main>li>a {color: #FFFFFF;font-size: 1.025rem;border: 0.0625rem solid #FFFFFF;padding: 0.3rem 0.875rem;
+    border-radius: 0.2rem;display: inline-block;font-weight: 100;}
