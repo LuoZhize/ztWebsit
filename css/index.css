@@ -1,0 +1,106 @@
+/*公共*/
+* {margin: 0;padding: 0;}
+li {list-style: none;}
+a {text-decoration: none;}
+body {width: 100%;height: 100%;overflow: hidden;font-family: "微软雅黑";}
+/*.ZT_zhe {position: absolute;top: 0;left: 0;background: #CCCCCC;opacity: 0.1;width: 100%;z-index: 10;height: 100%;}*/
+.clearn {clear: both;}
+.ztZT {color: #1A1A1A;}
+/*导航*/
+#zt_hpmain {display: none;}
+.zt_container {background: url(../img/ztwebBj.png) no-repeat;background-size: 100%;width: 100%;}
+.zt_nav {overflow: hidden;position: relative;padding-bottom: 2.45rem;}
+.zt_logo {position: absolute;top: 2rem;left: 4.6rem;}
+.zt_logo img {width: 16.625rem;}
+.ztNav_menu {float: right;margin-top: 3.8rem;margin-right: 15.2%;overflow: hidden;}
+.ztNav_menu>li {float: left;margin-left: 1.5rem;font-size: 1.375rem;cursor: pointer;color: #efefef;padding-bottom: 0.3rem;border-bottom: 0.2rem solid transparent;}
+.ztNav_menu>li:hover {color: #FFFFFF;border-bottom: 0.2rem solid #64f450;font-weight: bold;transition-duration: 0.2s;}
+/********************首页********************/
+/*服务导航*/
+.zt_FWPro {margin: 0 5% 0 15.5%;padding: 0 0.75rem;overflow: hidden;position: relative;}
+.zt_FWPro_head,.zt_FWLC_head {font-size: 1.6rem;text-align: center;color: #FFFFFF;margin: 0rem 9rem 0 0;position: relative;}
+.zt_FWPro_nav {padding: 0.4rem;overflow: hidden;}
+.zt_FWPro_nav>li {width: 7.5rem;margin-left: 2.2rem;display: inline-block;font-size: 1rem;color: #FFFFFF;text-align: center;padding: 1rem 0.5rem 0.5rem;}
+.zt_FWPro_nav>li p {padding: 1rem 0;}
+.zt_FWPro_nav>li img{padding: 0.7rem 0rem;}
+.zt_FWPro_nav>li:nth-of-type(1) img {width: 3.75rem;}
+.zt_FWPro_nav>li:nth-of-type(2) img {width: 3.625rem;}
+.zt_FWPro_nav>li:nth-of-type(3) img {width: 3.5rem;}
+.zt_FWPro_nav>li:nth-of-type(4) img {width: 3.3125rem;}
+.zt_FWPro_nav>li:nth-of-type(5) img {width: 3.875rem;}
+.zt_FWPro_nav>li:nth-of-type(6) img {width: 3.8125rem;}
+.zt_FWPro_nav>li:hover {transform: scale(1.07);transition-duration: 0.3s;font-weight:bold ;}
+/*服务流程*/
+.zt_FWLC {margin: 0 5% 0 17.5%;overflow: hidden;position: relative;}
+.zt_FWLC_head {margin-top: 0rem;}
+.zt_FWLC_nav {position: relative;overflow: hidden;height: 34.375rem;width: 62.5rem;background: url(../img/fw_LCBJ.png) no-repeat; background-size: 100%;}
+.zt_FWLC_nav>img,.zt_FWLC_nav>span {position: absolute;display: inline-block;}
+.zt_FWLC_nav>img:nth-of-type(1) {width: 4.725rem;left: 9.8rem;top: 2.4rem;}
+.zt_FWLC_nav>img:nth-of-type(2) {width: 11.5rem;left: 24rem;top: 1.5rem;}
+.zt_FWLC_nav>img:nth-of-type(3) {width: 13.5rem;left: 43rem;top: 2.8rem;}
+.zt_FWLC_nav>span {width: 2.2rem;height: 2.2rem;left: 51.7rem;top: 9.4rem;background: url(../img/mainQiqiu.png) no-repeat;background-size: 100%;}
+.zt_FWLC_nav>img:nth-of-type(4) {width: 6.5rem;left: 54rem;top: 8rem;}
+.zt_FWLC_nav>img:nth-of-type(5) {width: 13.9375rem;left: 33.8rem;top: 12rem;}
+.zt_FWLC_nav>img:nth-of-type(6) {width: 15.5rem;left: 7.5rem;top: 12.6rem;}
+.zt_FWLC_nav>img:hover {transform: translateY(-0.6rem);box-shadow: 0 0.6rem 0rem #ECECEC;transition-duration: 0.3s;}
+/*服务流程弹窗*/
+.zt_dialog {display: none;width: 30%;position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);background: #fff;box-shadow: 0 0 20px #ccc;padding: 2rem 3.25rem 3rem;border-radius: 3%;z-index: 10;}
+.zt_dialog_head {text-align: center;font-size: 1.7rem;margin-bottom: 1rem;}
+.zt_dialog_main {height: 7rem;font-size: 0.875rem;text-indent: 2rem;overflow: hidden;text-overflow: ellipsis; -webkit-line-clamp: 5;line-height: 1.5rem;-webkit-box-orient: vertical; display: -webkit-box;}
+/****************服务咨询*******************/
+#zt_ZXmain {margin: 0 18%;position: relative;padding: 2.4375rem 1rem 1rem 1rem;overflow: hidden;display: none;}
+.ztZX_head {font-size: 1.8rem;color: #FFFFFF;text-align: center;margin-bottom: 2.0625rem;cursor: default;}
+.ZX_nav {background: #FFFFFF;box-shadow: 0.1rem 0.3rem 1.5rem #ccc;position: relative;padding: 1.5rem 1.6rem 4rem;border-radius: 1%;}
+.ZX_nav>li {float: left;font-size: 1.375rem;color: #5e5e5e;margin-left: 2.9rem;line-height: 2.7rem;position: relative;padding-bottom: 1.4rem;padding-right: 2.5rem;}
+.ZX_nav>li:nth-of-type(1) {margin-left: 0;}
+.xDown {width: 1.5rem;height: 1.5rem;display: inline-block;background: url(../img/xdown.png) no-repeat;margin: 0.5rem 0 0 0.8rem;background-size: 100%;transition-duration: 0.8s;}
+.eDit {width: 1.1rem;height: 1.5rem;background: url(../img/ZXedit.png) no-repeat;margin: 0.9rem 0 0 0.5rem;background-size: 100%;}
+.ZX_nav>li:nth-of-type(4) {padding-right: 0;}
+.ZX_nav>li:nth-of-type(4) p {padding: 0 1rem;background: #85c98e;color: #FFFFFF;border-radius: 5%;}
+.ZX_main {padding: 2rem 0 7rem;}
+.ZX_main>li {margin-top: 3rem;}
+.ZX_main>li>p {color: #7d7d7d;font-size: 1rem;}
+.ZX_name,.ZX_time {color: #FFFFFF;}
+.ZX_time {float: right;margin-top: 1.5rem;}
+/*项目类型*/
+.ztZX_type {overflow: hidden;position: absolute;top: 4rem;left: -1.6rem;background: #FFFFFF;box-shadow: 0.1rem 0.8rem 1.5rem #ccc;border-bottom-right-radius: 5%;border-bottom-left-radius: 5%;display: none;}
+.ztZX_type>li {text-align: center;color: #1A1A1A;font-size: 1.2rem;padding: 0 3.8rem;border-radius: 5%;}
+.ztZX_type>li:hover {background: #CCCCCC;}
+/*项目需求联系方式*/
+#XQDia {display: none;padding: 1rem 2rem;position: absolute;z-index: 11;top: 40%;left: 50%;transform: translate(-50%,10%);box-shadow: 0 0 1.2rem #5E5E5E;border-radius: 2%;overflow: hidden;background: #FFFFFF;}
+.XQ_head {color: #191919;font-size: 1.2rem;}
+.XQ_mian {color: #aaaaaa;margin: 1rem 0 2rem;font-size: 1rem;}
+.XQ_btn,.LX_btn {color: #FFFFFF;background: #85c98e;display: inline-block;font-size: 1rem;border-radius: 5%;padding: 0.3rem 1rem;float: right;}
+#LXwayDia {display: none;padding: 3rem 2rem 1rem;position: absolute;z-index: 3;top: 40%;left: 50%;transform: translate(-50%,8%);box-shadow: 0 0 1.2rem #5E5E5E;border-radius: 2%;overflow: hidden;font-size: 1.2rem;color: #5e5e5e;background: #FFFFFF;}
+#LXwayDia form {width: 20rem;}
+.LX_btn {border: 1px solid #85C98E;}
+.LX_main {width: 75%;margin: 0 auto;}
+.LX_main input {width: 9rem;border: 1px solid #FFFFFF;border-bottom: 1px solid #d1d1d1;font-size: 0.9rem;padding: 0.2rem 0.5rem;}
+.LX_main p {margin-bottom: 2rem;}
+/*********************新闻公告************************/
+#zt_XWmain {margin: 0 14%;position: relative;padding: 0rem 5rem 1rem;overflow: hidden;display: block;}
+.ztxw_head {text-align: center;font-size: 1.8rem;color: #FFFFFF;}
+.ztxw_nav {font-size: 1rem;color: #FFFFFF; overflow: hidden;text-align: center;margin: 1rem 0 1.5rem 6.5rem;}
+.ztxw_nav>li {padding: 0.7rem 0;margin-right: 6rem;display: inline-block;}
+.ztxw_navLine {width: 100%;height: 0.375rem;background: red;}
+.ztxw_info {overflow: hidden;width: 62.5rem;position: relative;}
+.ztXWList {padding: 0.5rem 0.5rem 0.5rem 1.5rem;width: 10000%;}
+.ztXWList>li {width: 26.3125rem;padding: 1.5rem;overflow: hidden;position: relative;margin-right: 0.8rem;display: inline-block;}
+.ztXWList>li:last-of-type {margin-right: 0;}
+.ztXWList>li>img {width: 100%;z-index: 10;position: relative;}
+.XW_xq {padding: 0.8rem 0 4rem 0;overflow: hidden;z-index: 10;position: relative;}
+.XW_xqHead {text-overflow: ellipsis; -webkit-line-clamp: 2;line-height: 2rem;-webkit-box-orient: vertical; display: -webkit-box;font-size: 1.2rem;color: #fefefe;overflow: hidden;}
+.XW_xqMain {font-size: 0.875rem;color: #cecece;margin-top: 0.8rem;overflow: hidden;-webkit-line-clamp: 4;-webkit-box-orient: vertical; display: -webkit-box;word-spacing: initial;}
+.XW_xqtime {position: absolute;bottom: 1.5rem;color: #cecece;font-size: 1.2rem;}
+.XW_xqtime>span {font-size: 0.875rem;}
+.ztxw_page {position: absolute;top: 52.5%;}
+.ztxw_page p {width: 5rem;height: 7rem;background-size: 150%;position: relative;display: inline-block;cursor: pointer;}
+.pageL {left: -15%;background: url(../img/lrPage.png) no-repeat;}
+.pageR {left: 528%;background: url(../img/lrPage.png) no-repeat 100% 0%;}
+.ztxw_zhe {width: 26.3125rem;padding: 14rem 4rem;position: absolute;background: black;opacity: 0.3;z-index: 1;top: 0;left: 0;}
+/********************成功案例**********************/
+#zt_CGmain {margin: 0 18% 0 24%;position: relative;padding: 3.4375rem 1rem 1rem 1rem;overflow: hidden;display: none;}
+.zt_CGList>li {float: left;margin-right: 4rem;overflow: hidden;box-shadow: 0 0 1rem #D1D1D1;width: 14.5rem;height: 10.3rem;margin-bottom: 2.5rem;}
+.zt_CGList>li:hover {transform: scale(1.1);transition-duration: 0.3s;}
+.zt_CGList>li img {width: 100%;}
+.zt_CGList>li:nth-of-type(3n) {margin-right: 0;}

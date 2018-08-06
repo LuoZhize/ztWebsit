@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8" />
+	<title>中腾环仪</title>
+	<script>
+		var pixelRatio = 1 / window.devicePixelRatio;
+		document.write('<meta name="viewport" content="width=device-width,initial-scale=' + pixelRatio + ',minimum-scale=' + pixelRatio + ',maximum-scale=' + pixelRatio + ',user-scalable=no" />');
+		var html = document.getElementsByTagName('html')[0];
+		getRem();
+		window.addEventListener('resize', getRem, false);
+		function getRem() {
+			var pageWidth = html.getBoundingClientRect().width;
+			html.style.fontSize = pageWidth / 100 + 'px';
+		}
+	</script>
+	<link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+	<div class="zt_container">
+		<nav class="zt_nav">			
+			<div class="zt_logo"><img src="img/ztLogoDev.png" /></div>
+			<ul class="ztNav_menu">
+				<li>首页</li>
+				<li>服务咨询</li>
+				<li>新闻公告</li>
+				<li>项目案例</li>
+				<li>关于我们</li>
+			</ul>
+		</nav>
+		<!--首页-->
+		<div id="zt_hpmain"></div>
+		<!--服务咨询-->
+		<div id="zt_ZXmain"></div>
+		<!--成功案例-->
+		<div id="zt_CGmain"></div>
+		<!--新闻公告-->
+		<div id="zt_XWmain"></div>
+		<!--关于-->
+		<div id="zt_WMmain">
+			
+		</div>
+	</div>
+	<div class="ZT_zhe"></div>
+</body>
+<script type="text/javascript" src="js/jquery.min.js" ></script>
+<script type="text/javascript" src="js/index.js" ></script>
+</html>
