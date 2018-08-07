@@ -11,6 +11,9 @@ $('#zt_XWmain').load("./xwgg.html",function () {
 $('#zt_CGmain').load("./cgal.html",function () {
     jQuery.getScript("../ztWebsite/js/cgal.js");
 });
+$('#zt_WMmain').load("./gyOur.html",function () {
+
+})
 //切换时的颜色
 //$('.ztNav_menu>li').click(function () {
 //	$('.ztNav_menu>li').css('color','#363636');
@@ -23,24 +26,36 @@ $('.ztNav_menu>li:nth-of-type(1)').click(function () {
 	$('#zt_ZXmain').hide();
 	$('#zt_CGmain').hide();
 	$('#zt_XWmain').hide();
+    $('#zt_WMmain').hide();
 })
 $('.ztNav_menu>li:nth-of-type(2)').click(function () {
 	$('#zt_hpmain').hide();
 	$('#zt_CGmain').hide();
 	$('#zt_XWmain').hide();
 	$('#zt_ZXmain').show();
+    $('#zt_WMmain').hide();
 })
 $('.ztNav_menu>li:nth-of-type(3)').click(function () {
 	$('#zt_hpmain').hide();
 	$('#zt_ZXmain').hide();
 	$('#zt_CGmain').hide();
 	$('#zt_XWmain').show();
+    $('#zt_WMmain').hide();
 })
 $('.ztNav_menu>li:nth-of-type(4)').click(function () {
 	$('#zt_hpmain').hide();
 	$('#zt_ZXmain').hide();
 	$('#zt_XWmain').hide();
 	$('#zt_CGmain').show();
+    $('#zt_WMmain').hide();
+//	navTab(hide,hide,hide,show);
+})
+$('.ztNav_menu>li:nth-of-type(5)').click(function () {
+    $('#zt_hpmain').hide();
+    $('#zt_ZXmain').hide();
+    $('#zt_XWmain').hide();
+    $('#zt_WMmain').show();
+    $('#zt_CGmain').hide();
 //	navTab(hide,hide,hide,show);
 })
 //		function navTab (nav1,nav2,nav3,nav4) {
