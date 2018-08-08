@@ -9,7 +9,7 @@ body {width: 100%;height: 100%;overflow: hidden;font-family: "微软雅黑";
 .clearn {clear: both;}
 .ztZT {color: #1A1A1A;}
 /*导航*/
-#zt_hpmain {display: none;}
+#zt_hpmain {display: block;}
 .zt_container {background: url(../img/ztwebBj.png) no-repeat;background-size: 100%;width: 100%;}
 .zt_nav {overflow: hidden;position: relative;padding-bottom: 2.45rem;}
 .zt_logo {position: absolute;top: 2rem;left: 4.6rem;}
@@ -49,16 +49,18 @@ body {width: 100%;height: 100%;overflow: hidden;font-family: "微软雅黑";
 .zt_dialog_head {text-align: center;font-size: 1.7rem;margin-bottom: 1rem;}
 .zt_dialog_main {height: 7rem;font-size: 0.875rem;text-indent: 2rem;overflow: hidden;text-overflow: ellipsis; -webkit-line-clamp: 5;line-height: 1.5rem;-webkit-box-orient: vertical; display: -webkit-box;}
 /*end*/ /*服务咨询 start*/
-#zt_ZXmain {margin: 0 0 0 15%;position: relative;padding: 0 1rem 10rem 1rem;overflow: hidden;display: block;}
-.fw_head {color: #FFFFFF;text-align: center;}
-.fw_headTitle {font-size: 1.775rem;margin: 1rem 0;}
+#zt_ZXmain {margin: 0 0 0 15%;position: relative;padding: 0 1rem 10rem 1rem;overflow: hidden;display: none;}
+.fw_head {color: #FFFFFF;text-align: center;position: relative;margin-right: 13rem;}
+.fw_headTitle {font-size: 1.775rem;margin: 0 0 1rem;}
 .fw_headHint {width: 50rem;font-size: 0.875rem;font-weight: 100;background: url("../img/fwHeadHint.png") no-repeat;background-size: 100%;padding: 0.5rem 0;margin: 0 auto;}
-.fw_main {padding: 3rem 0 10rem 2rem;position: relative;}
+.fw_main {padding: 2rem 0 10rem 2rem;position: relative;}
 .fw_mainSlideLTitle {width: 3rem;padding: 2rem 0rem;color: #FFFFFF;position: relative;writing-mode: vertical-lr;line-height: 3rem;display: inline-block;margin-bottom: 10rem;}
 .fw_mainSlideLZhe {width: 100%;height: 100%;position: absolute;top: 0;left: 0;background: #FFFFFF;opacity: 0.3;}
 .fw_mainTab {display: inline-block;width: 37rem;position: relative;display: inline-block;}
-.fw_mainTab>li {display: inline-block;margin: 0 0 2rem 6rem;padding: 0.5rem 0.3rem 0.8rem;text-align: center;width: 7.4rem;background: url("../img/fwMainShow.png") no-repeat;background-size: 100%;position: relative;}
-.fw_mainTab>li:nth-of-type(2n) {margin-left: 7rem;}
+.fw_mainTab>li {display: inline-block;margin: 0 0 2rem 6rem;padding: 0.5rem 0.3rem 0.8rem;text-align: center;width: 7.4rem;position: relative;transition-duration: 0.2s;}
+.fw_mainListDefault {background: url("../img/fwMainShow.png") no-repeat;background-size: 100%;}
+.fw_mainTab>li:hover {background: url("../img/fwMainShow.png") no-repeat;background-size: 100%;}
+.fw_mainTab>li:nth-of-type(2n) {margin-left: 5rem;}
 .fw_mainTab>li:nth-of-type(5) {padding-top: 1.5rem;}
 .fw_mainTab>li:nth-of-type(6) {padding-top: 1.5rem;}
 .fw_mainTab>li img {width: 4.5rem;display: inline-block;}
@@ -66,30 +68,26 @@ body {width: 100%;height: 100%;overflow: hidden;font-family: "微软雅黑";
 .fw_mainTab>li>div>p {color: #FFFFFF;font-size: 1rem;text-align: center;margin: 1rem 0 0.2rem;}
 .fw_mainTab>li:nth-of-type(2) p {margin: 1rem 0 0.2rem;}
 .fw_mainTab>li:nth-of-type(3) p {margin: 0.7rem 0 0.2rem;}
-.fw_mainTab .fw_mainTabConfirm {width: 1.9375rem;height: 1.9375rem;background: url("../img/fwMainChoice.png") no-repeat;background-size: 100%;position: absolute;top: 5%;right: 4%;}
-.fw_mainTab .fwMainListZhe {position: absolute;left: 4%;top: 3%;width: 92%;height: 92%;background: black;opacity: 0.2;z-index: 1;}
+.fw_mainTab .fw_mainTabConfirm {display: none;width: 1.9375rem;height: 1.9375rem;background: url("../img/fwMainChoice.png") no-repeat;background-size: 100%;position: absolute;top: 5%;right: 4%;}
+.fw_mainTab .fwMainListZhe {position: absolute;left: 4%;top: 3%;width: 92%;height: 92%;background: black;opacity: 0.2;z-index: 1;display: none;}
 .fw_mainListSub {z-index: 2;position: relative;}
-.fw_mainInfo {position: absolute;display: inline-block;background: url("../img/fwMainlistInfo.png") no-repeat;background-size: 100%;width: 24rem;height: 30rem;display: none;}
+.fw_mainInfo {position: absolute;display: inline-block;background: url("../img/fwMainlistInfo.png") no-repeat;background-size: 100%;width: 24rem;height: 30rem;display: none;right: 20rem;top: 2rem;}
 .fw_mainInfo div {position: relative;z-index: 2;padding:  0 1.5rem;}
 .fw_mainInfoTitle {color: #FFFFFF;font-size: 1.25rem;margin: 2rem auto 1rem;text-align: center;}
 .fw_mainInfoContent {color: #FFFFFF;font-size: 0.875rem;line-height: 1.5rem;text-indent: 1.5rem;letter-spacing: 0.1rem;}
 .fw_mainInfo .fw_mainInfoZhe {width: 95%;height: 95%;background: black;opacity: 0.2;position: absolute;top: 2.5%;left: 2.7%;}
 /*联系方式*/
-#LXwayDia {display: block;padding: 0 0 1rem 0;position: absolute;top: 13.8%;left: 48%;border-radius: 1%;overflow: hidden;font-size: 1.2rem;color: #5e5e5e;}
-#LXwayDia form {width: 31rem;}
-.LX_describe {padding: 1rem 1rem;height: 19rem;width: 27rem;position: relative;}
-.LX_describe span {color: #FFFFFF;}
-.LX_mainContent {color: #c6cdcf;font-size: 0.875rem;margin-top: 0.5rem;line-height: 1.5rem;letter-spacing: 0.1rem;}
-.LX_main input {width: 9rem;font-size: 0.9rem;padding: 0.2rem 0rem;background: transparent;border: 0.0625rem solid transparent;}
-.LX_main>p {margin-top: 1rem;color:#FFFFFF;padding: 0.7rem 1rem;width: 16rem;position: relative;}
-.LX_btn {border: 0.0625rem solid #85c98e;padding: 0.4rem 1.5rem;color: #FFFFFF;background: #85c98e;margin-top: 1rem;}
-.LXMainZhe {position: absolute;top: 0;background: #FFFFFF;opacity: 0.2;width: 100%;height: 100%;left: 0;display: inline-block;}
-.LXSubZhe {position: absolute;top: 0;background: #FFFFFF;opacity: 0.2;width: 100%;height: 100%;left: 0;display: inline-block;}
-
-
-
-
-
+#LXwayDia {display: none;padding: 0 0 1rem 0;position: absolute;top: 10.3%;left: 46%;border-radius: 1%;overflow: hidden;font-size: 1.2rem;color: #5e5e5e;}
+#LXwayDia form {width: 34rem;}
+.LX_mainContent {color: #c6cdcf;font-size: 0.875rem;margin-top: 0.5rem;line-height: 1.5rem;letter-spacing: 0.1rem;z-index: 2;}
+.LX_main>div {margin-top: 1.3rem;color:#FFFFFF;position: relative;width: 23rem;}
+.LX_main>div>p {font-size: 1rem;padding: 0.5rem 1rem;width: 20rem;z-index: 2;position: relative;}
+.LX_main .LX_describe {padding: 1rem 1rem;height: 19rem;width: 27rem;position: relative;}
+.LX_describe div {position: relative;z-index: 2;}
+.LX_describe span {color: #FFFFFF;font-size: 1rem;z-index: 2;}
+.LX_main input {width: 14rem;font-size: 0.875rem;padding: 0.2rem 0rem;background: transparent;border: 0.0625rem solid transparent;color: #c6cdcf;}
+.LX_btn {border: 0.0625rem solid #85c98e;padding: 0.3rem 1.5rem;color: #FFFFFF;background: #85c98e;margin-top: 1.3rem;}
+.LXMainZhe,.LXSubZhe {position: absolute;top: 0;background: #FFFFFF;opacity: 0.2;width: 100%;height: 100%;left: 0;display: inline-block;z-index: 1;}
 /*end*/ /*xwgg（新闻公告） start*/
 #zt_XWmain {margin: 0 14%;position: relative;padding: 0rem 5rem 5rem;overflow: hidden;display: none;}
 .ztxw_head {text-align: center;font-size: 1.8rem;color: #FFFFFF;}
@@ -115,7 +113,7 @@ body {width: 100%;height: 100%;overflow: hidden;font-family: "微软雅黑";
 .ztxw_zhe {width: 26.3125rem;padding: 14.6rem 4rem;position: absolute;background: black;opacity: 0.3;z-index: 1;top: 0;left: 0;display: none;}
 /*end*/ /*cgal（成功案例） start*/
 #zt_CGmain {margin: 0 15%;position: relative;padding: 0.4375rem 1rem 20rem 0rem;overflow: hidden;display: none;}
-.chal_head {font-size: 1.8rem;color: #FFFFFF;text-align: center;margin: 2rem 0 2.5rem;}
+.chal_head {font-size: 1.8rem;color: #FFFFFF;text-align: center;margin: 0rem 0 2.5rem;}
 .zt_CGList {padding-left: 5.3rem;}
 .zt_CGList>li {float: left;margin-right: 3rem;overflow: hidden;width: 12.5rem;margin-bottom: 3rem;
     background: url("../img/successImg.png") no-repeat 45% 50%;background-size: 200%;overflow: hidden;position: relative;}
@@ -127,7 +125,7 @@ body {width: 100%;height: 100%;overflow: hidden;font-family: "微软雅黑";
 .zt_CGInfoLine {width: 5rem;background: #FFFFFF;height: 0.0625rem;margin: 1rem auto 3rem;}
 .zt_CGInfoLJ {font-size: 1rem;color: #FFFFFF;border: 0.0625rem solid #FFFFFF;padding: 0.2rem 1rem;border-radius: 0.2rem;}
 /*end*/ /*gyOur（关于我们） start*/
-#zt_WMmain {margin: 0 0 0 16%;position: relative;padding: 0.4375rem 1rem 10rem 1rem;overflow: hidden;display: none;}
+#zt_WMmain {margin: 0 0 0 16%;position: relative;padding: 0 1rem 10rem 1rem;overflow: hidden;display: none;}
 .gyWM_head {color: #FFFFFF;text-align: center;margin: 0 0 2rem 12.5rem;width: 40.5375rem;}
 .gyWM_headHead {font-size: 1.775rem;margin: 1rem 0;}
 .gyWM_headInfo {font-size: 1.15rem;font-weight: 100;line-height: 1.875rem;}

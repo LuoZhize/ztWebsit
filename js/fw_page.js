@@ -1,36 +1,33 @@
-var num=0,num1=0,num2=0;//项目类型、项目需求、联系方式点击事件
-$('.ZX_nav>li:nth-of-type(1)').click(function () {
-	if ($('#XQDia').is(':visible')||$('#LXwayDia').is(':visible')) {} else{
-		num++;
-		if (num==1) {
-			$('.ztZX_type').slideDown(500);
-			$('.xDown').css({"transform":"rotateZ(180deg) translateY(-0.3rem)"})
-		} else{
-			$('.ztZX_type').slideUp(500);
-			$('.xDown').css({"transform":"rotateZ(0deg) translateY(0rem)"})
-			num =0;
-		}
-	}
+var tabList = 0;//服务咨询左侧列表点击数量
+$('.fw_mainTab>li:nth-of-type(1)').children('.fwMainListZhe').show(10);
+$('.fw_mainInfo:nth-of-type(1)').show(10);
+$('.fw_mainTab>li:nth-of-type(1)').addClass('fw_mainListDefault');
+$('.fw_mainTab>li').mouseenter(function () {
+    $('.fw_mainTab>li:nth-of-type(1)').removeClass('fw_mainListDefault');
+    $('.fwMainListZhe').hide(10)
+	$(this).children('.fwMainListZhe').show(10);
+	$('.fw_mainInfo').show(10);
+	$('#LXwayDia').hide();
 })
-$('.ZX_nav>li:nth-of-type(2)').click(function () {
-	if ($('.ztZX_type').is(':visible')||$('#LXwayDia').is(':visible')) {} else{
-		num1++;
-		if (num1==1) {
-			$('#XQDia').slideDown(500);
-		} else{
-			num1 =0;
-			$('#XQDia').slideUp(500);
-		}
-	}
+$('.fw_mainTab>li').mouseleave(function () {
+    $('.fw_mainTab>li:nth-of-type(1)').removeClass('fw_mainListDefault');
+    $('.fwMainListZhe').hide(10);
+    $('.fw_mainInfo').hide(10);
+    if (tabList>0) {
+        $('#LXwayDia').show(10);
+	} else {}
 })
-$('.ZX_nav>li:nth-of-type(3)').click(function () {
-	if ($('.ztZX_type').is(':visible')||$('#XQDia').is(':visible')) {} else{
-		num2++;
-		if (num2==1) {
-			$('#LXwayDia').fadeIn(300);
-		} else{
-			$('#LXwayDia').fadeOut(300);
-			num2 =0;
-		}
-	}
+$('.fw_mainTab>li').click(function () {
+    tabList++;
+	if (tabList != 0) {
+        $(this).children('.fw_mainListSub').children('.fw_mainTabConfirm').show(10);
+        $(this).siblings().children('.fw_mainListSub').children('.fw_mainTabConfirm').hide(10);
+        $('#LXwayDia').show(10);
+        $('.fw_mainInfo').hide(10);
+    } else {
+        $(this).children('.fw_mainListSub').children('.fw_mainTabConfirm').hide(10);
+        $('#LXwayDia').hide(10);
+        $('.fw_mainInfo').show(10);
+        tabList=0;
+    }
 })
